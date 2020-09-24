@@ -5,7 +5,7 @@ def sift(li,low,high):
     while j <= high:
         if j + 1 <= high and li[j+1] < li[j]:
             j = j + 1
-        if li[j] > tmp:
+        if li[j] < tmp:
             li[i] = li[j]
             i = j
             j = 2 * i +1
@@ -32,3 +32,5 @@ import random
 li  = list(range(100))
 random.shuffle(li)
 print(topk(li,10))
+ki = [1,0,2,4,7,9,8,5,6,3,17,15,20,16,22,100]
+print(topk(ki,6))
