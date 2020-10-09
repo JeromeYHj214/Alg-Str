@@ -1,3 +1,7 @@
+"""
+希尔排序
+基于插入排序法
+"""
 def insert_sort_gap(li,gap):
     for i in range(gap,len(li)):
         tmp = li[i]

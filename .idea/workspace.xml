@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b62ab386-77a8-40ef-8a24-f87ac3fd4fba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/insert_sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bucket_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/count_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/count_sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.shell_sort">
+  <component name="RunManager" selected="Python.bucket_sort">
+    <configuration name="bucket_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Alg-Str" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bucket_sort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="heap_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Alg-Str" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,27 +109,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heap_topk.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="insert_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Alg-Str" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Code\Python_Code\Alg-Str\insert_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,8 +161,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bucket_sort" />
         <item itemvalue="Python.shell_sort" />
-        <item itemvalue="Python.insert_sort_gap" />
         <item itemvalue="Python.merge_sort" />
         <item itemvalue="Python.heap_sort" />
         <item itemvalue="Python.heap_topk" />
@@ -200,46 +200,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1254" y="251" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1601306101050" />
-    <state width="856" height="308" key="GridCell.Tab.0.bottom" timestamp="1601307519400">
+    <state x="770" y="292" key="FileChooserDialogImpl" timestamp="1602218844565">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="770" y="292" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602218844565" />
+    <state width="856" height="308" key="GridCell.Tab.0.bottom" timestamp="1602224323379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1222" height="256" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1600940403950" />
-    <state width="856" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601307519400" />
-    <state width="856" height="308" key="GridCell.Tab.0.center" timestamp="1601307519400">
+    <state width="856" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602224323379" />
+    <state width="856" height="308" key="GridCell.Tab.0.center" timestamp="1602224323378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1222" height="256" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1600940403950" />
-    <state width="856" height="308" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601307519400" />
-    <state width="856" height="308" key="GridCell.Tab.0.left" timestamp="1601307519400">
+    <state width="856" height="308" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602224323378" />
+    <state width="856" height="308" key="GridCell.Tab.0.left" timestamp="1602224323378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1222" height="256" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1600940403950" />
-    <state width="856" height="308" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601307519400" />
-    <state width="856" height="308" key="GridCell.Tab.0.right" timestamp="1601307519400">
+    <state width="856" height="308" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602224323378" />
+    <state width="856" height="308" key="GridCell.Tab.0.right" timestamp="1602224323379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1222" height="256" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1600940403950" />
-    <state width="856" height="308" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601307519400" />
-    <state width="856" height="308" key="GridCell.Tab.1.bottom" timestamp="1601307519401">
+    <state width="856" height="308" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602224323379" />
+    <state width="856" height="308" key="GridCell.Tab.1.bottom" timestamp="1602224323379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1222" height="256" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1600940403950" />
-    <state width="856" height="308" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601307519401" />
-    <state width="856" height="308" key="GridCell.Tab.1.center" timestamp="1601307519401">
+    <state width="856" height="308" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602224323379" />
+    <state width="856" height="308" key="GridCell.Tab.1.center" timestamp="1602224323379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1222" height="256" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1600940403950" />
-    <state width="856" height="308" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601307519401" />
-    <state width="856" height="308" key="GridCell.Tab.1.left" timestamp="1601307519400">
+    <state width="856" height="308" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602224323379" />
+    <state width="856" height="308" key="GridCell.Tab.1.left" timestamp="1602224323379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1222" height="256" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1600940403950" />
-    <state width="856" height="308" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601307519400" />
-    <state width="856" height="308" key="GridCell.Tab.1.right" timestamp="1601307519401">
+    <state width="856" height="308" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602224323379" />
+    <state width="856" height="308" key="GridCell.Tab.1.right" timestamp="1602224323379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1222" height="256" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1600940403950" />
-    <state width="856" height="308" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601307519401" />
+    <state width="856" height="308" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602224323379" />
     <state x="261" y="180" key="SettingsEditor" timestamp="1600935189338">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

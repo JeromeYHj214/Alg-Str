@@ -1,19 +1,25 @@
+"""
+堆排序
+"""
 def sift(li,low,high):
-    i = low
-    j = 2 * i + 1
-    tmp = li[low]
-    while j <= high:
-        if j + 1 <= high and li[j+1] < li[j]:
-            j = j + 1
+    i = low     # i指向根节点
+    j = 2 * i + 1  # j指向孩子结点
+    tmp = li[low]  #保存堆顶
+    while j <= high: #只要j节点有效
+        if j + 1 <= high and li[j+1] < li[j]: #右孩子存在且比较大
+            j = j + 1 #指向右孩子
         if li[j] < tmp:
             li[i] = li[j]
-            i = j
+            i = j #往下一层
             j = 2 * i +1
-        else:
+        else:       #tmp值更大，放在位置i
             li[i] = tmp
             break
+
+    # 当while因为条件跳出循环会去执行else，若因为break跳出循环，则不执行else。
+
     else:
-        li[i] = tmp
+        li[i] = tmp   #tmp查到最底层，跳出while，tmp还未放回，所有加一步放回
 
 def topk(li,k):
     heap = li[0:k]

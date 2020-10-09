@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-This is a temporary script file.
+计数排序
 """
 def count_sort(li,max_count=10):
     count = [0 for i in range(max_count+1)]
